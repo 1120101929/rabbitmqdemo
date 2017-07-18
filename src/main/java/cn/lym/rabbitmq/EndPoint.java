@@ -23,7 +23,7 @@ public abstract class EndPoint {
         //create a connection factory
         ConnectionFactory factory = new ConnectionFactory();
         //hostname of the rabbitmq server
-        String host = "123.56.220.18";
+        String host = "liuyimin.aliyun.com";
         factory.setHost(host);
         factory.setUsername("test");
         factory.setPassword("test");
@@ -37,6 +37,7 @@ public abstract class EndPoint {
 
     /**
      * 关闭channel和Connection。并非必须，因为隐含是自动调用的。
+     *
      * @throws IOException
      */
     public void close() throws IOException, TimeoutException {
